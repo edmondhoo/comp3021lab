@@ -24,7 +24,7 @@ public class Heap<T extends Comparable<T>> {
     public T peek() {
         //TODO
     	if(container.size()==0) {
-    		throw new IllegalStateException("afsadsa");
+    		throw new IllegalStateException();
     	}else {
     		return container.get(0);
     	}
