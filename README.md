@@ -5,13 +5,6 @@
 
 
 # Code Interview for Lab<br>
-The major difficult of lab 3 is how to design and implement the function of keywords searching. Since we need to consider different cases, such as "X1 X2 OR X3" and "X1 OR X2 X3", we need to handle "AND" and "OR" case respectively.<br>
+First, I will go through all the tasks to check whether know the topic. In this lab, it mainly focuses on file I/O, which is a common topic for any programming language. Therefore, it is not very difficult for me.
 
-First, I will handle "OR" case. If the searching keywords contain "OR" situation, I will check the List whether contains the keywords[i-1] and  keywords[i+1]. If the List contain the keywords, I will set true and keep checking until finishing all searches.<br>
-
-Second, I will handle "AND" case. If the List[i+1] (next) contains "OR" case, I will go to "OR" situation to check. Otherwise, I will check the List[i] whether contains the keywords. If yes, I will set true to "Result".<br>
-
-Finally, based on the result of "result" and "resultOr", I will know that the List whether contains the keywords and put the searched object to the returning list. Therefore, we get the searching result.<br>
-
-How to came up a solution?<br>
-I will use Debug mode to check the result whether matched with my expectation. By tracking data, I will know the correctness of my logic and fix the potential bugs. Therefore, I can come up my solution.
+However, the lab still has a difficult part in the 'save' function. In the first round, I just follow the instruction to implement the task, but I found that the saved object don't have any folders. Therefore, I use debug mode to track the data and find out the issue because debug mode is the most efficient to track the data and know what is wrong in our logic. Eventually, I found that I forgot to assign folders to the new object. Therefore, the new object doesn't have the folders. I just need to assign the folders to the new object and fix the issue (object.folders = this.folders).
