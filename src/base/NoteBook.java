@@ -33,6 +33,10 @@ public class NoteBook implements java.io.Serializable{
 	public ArrayList<Folder> getFolders() {
 		return folders;
 	}
+	
+	public void addFolder(Folder folder) {
+		folders.add(folder);
+	}
 
 	public boolean createTextNote(String folderNmae, String title) {
 		TextNote note = new TextNote(title);
